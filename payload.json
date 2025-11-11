@@ -1,0 +1,6 @@
+{
+  "title": "Erro de login",
+  "description": "Usuários não conseguem autenticar",
+  "impact": "high",
+  "urgency": "critical"
+}
