@@ -1,3 +1,4 @@
+![CI](https://github.com/rakellkizz/incident-assistant/actions/workflows/ci.yml/badge.svg)
 # Incident Assistant (Go, ITIL-like)
 
 Microserviço em Go para analisar incidentes corporativos:
