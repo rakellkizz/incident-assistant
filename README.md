@@ -281,4 +281,15 @@ A ideia é padronizar a qualidade e acelerar a criação de testes com diretrize
     "Adicionar mensagens claras em falhas: 'esperava X, obteve Y'."
   ]
 }
+Como executar localmente
+# na raiz (onde está go.mod)
+go run run_rules.go
+
+Saída esperada
+🧠 Regras do Projeto:
+Projeto: Incident Assistant
+ - Gerar testes somente para funções públicas exportadas.
+ - Usar mocks para dependências externas.
+ - Adicionar mensagens claras em falhas: 'esperava X, obteve Y'.
+
 
