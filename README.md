@@ -1,11 +1,15 @@
-# 🚨 Incident Assistant (Go + Docker + ITIL-like)
+<div align="center">
 
-![CI](https://github.com/rakellkizz/incident-assistant/actions/workflows/ci.yml/badge.svg)
-![Go](https://img.shields.io/badge/Go-1.22-00ADD8?logo=go)
-![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker)
-![GitHub Actions](https://img.shields.io/badge/CI-CD%20Pipeline-success-brightgreen?logo=githubactions)
+# 🧠 Incident Assistant  
+Analisador de Incidentes ITIL-like com Go + Docker + GitHub Actions 🚀  
 
----
+![go-ci](https://github.com/rakellkizz/incident-assistant/actions/workflows/ci.yml/badge.svg)
+![Go Version](https://img.shields.io/badge/Go-1.22-blue?logo=go)
+![Docker](https://img.shields.io/badge/Docker-ready-blue?logo=docker)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-online-success)
+
+</div>
 
 ## 🧠 Sobre o Projeto
 
