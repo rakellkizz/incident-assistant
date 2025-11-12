@@ -250,3 +250,35 @@ Todas as rotas podem ser testadas em ambiente local ou via pipeline automatizado
 - **testar a API manualmente** se quiser analisar as respostas;
 - e entender de forma clara que você domina **DevOps, automação e boas práticas ITIL**.
 
+---
+
+## 🤖 Project Rules (AI-guided testing)
+
+Este módulo adiciona **regras de projeto** que **orientam a IA no desenvolvimento de testes**.  
+A ideia é padronizar a qualidade e acelerar a criação de testes com diretrizes claras.
+
+**Arquivos principais**
+- `project_rules.json` – regras que a IA deve seguir (na raiz do repositório)
+- `internal/ai/rules_generator.go` – lê o JSON e formata as regras
+- `run_rules.go` – executável que imprime as regras (para demo/CI)
+
+**Exemplo do `project_rules.json`:**
+```json
+{
+  "project_name": "Incident Assistant",
+  "test_standards": {
+    "naming_convention": "Test<Feature>_<Scenario>",
+    "required_cases": ["success", "validation_error", "edge_case"],
+    "coverage_target": 0.8
+  },
+  "assertions": {
+    "success": "res.StatusCode == 200",
+    "validation_error": "res.StatusCode == 400"
+  },
+  "ai_guidelines": [
+    "Gerar testes somente para funções públicas exportadas.",
+    "Usar mocks para dependências externas.",
+    "Adicionar mensagens claras em falhas: 'esperava X, obteve Y'."
+  ]
+}
+
