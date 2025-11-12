@@ -1,16 +1,41 @@
 name: go-ci
+
 on:
-  push: { branches: ["main"] }
-  pull_request: { branches: ["main"] }
+  push:
+  pull_request:
 
 jobs:
   build-test:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
         with:
-          go-version: "1.22"
-      - run: go mod download
-      - run: go test ./... -v
-      - run: go build -v ./...
+          go-version: '1.22'
+
+      - name: Cache Go modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/go/pkg/mod
+            ~/.cache/go-build
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      - name: Download deps
+        run: go mod download
+
+      - name: Build (all pkgs)
+        run: go build ./...
+
+      - name: Unit tests (verbose)
+        run: go test ./... -v
+
+      # ⚠️ run_rules.go e project_rules.json precisam estar NA RAIZ do repo
+      - name: Print AI Project Rules
+        run: go run ./cmd/rules
