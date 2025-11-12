@@ -1,0 +1,17 @@
+{
+  "project_name": "Incident Assistant",
+  "test_standards": {
+    "naming_convention": "Test<Feature>_<Scenario>",
+    "required_cases": ["success", "validation_error", "edge_case"],
+    "coverage_target": 0.8
+  },
+  "assertions": {
+    "success": "res.StatusCode == 200",
+    "validation_error": "res.StatusCode == 400"
+  },
+  "ai_guidelines": [
+    "Gerar testes somente para funções públicas exportadas.",
+    "Usar mocks para dependências externas.",
+    "Adicionar mensagens claras em falhas: 'esperava X, obteve Y'."
+  ]
+}
