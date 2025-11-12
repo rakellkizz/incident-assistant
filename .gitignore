@@ -1,0 +1,46 @@
+# ======================================
+# 🧠 .gitignore – Projeto Incident Assistant
+# Linguagem: Go + Docker + GitHub Actions
+# ======================================
+
+# 🔹 Binários do Go
+incident-assistant
+incident-assistant.exe
+*.exe
+*.out
+*.test
+
+# 🔹 Pastas temporárias e cache
+/tmp/
+*.log
+*.lock
+*.pid
+*.swp
+*.bak
+
+# 🔹 Cache do Go
+go.sum
+**/__debug_bin
+**/debug
+**/coverage.out
+
+# 🔹 Configurações locais e IDE
+.vscode/
+.idea/
+.DS_Store
+
+# 🔹 Docker
+*.env
+.env.local
+.env.*.local
+
+# 🔹 GitHub Actions (logs temporários)
+*.tmp
+*.cache
+*.bak
+
+# 🔹 Outros arquivos gerados
+node_modules/
+dist/
+build/
+coverage/
