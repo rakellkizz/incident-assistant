@@ -1,7 +1,10 @@
 <div align="center">
 
-# 🧠 Incident Assistant  
-Analisador de Incidentes ITIL-like com Go + Docker + GitHub Actions 🚀  
+# 🌻💜 Incident Assistant  
+### _Analisador inteligente de incidentes ITIL-like_  
+#### Go + Docker + GitHub Actions 🚀
+
+---
 
 ![go-ci](https://github.com/rakellkizz/incident-assistant/actions/workflows/ci.yml/badge.svg)
 ![Go Version](https://img.shields.io/badge/Go-1.22-blue?logo=go)
@@ -9,7 +12,13 @@ Analisador de Incidentes ITIL-like com Go + Docker + GitHub Actions 🚀
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-online-success)
 
+---
+
+### 💬 Projeto desenvolvido por **Raquel G. de Souza**  
+#### 💼 *Demonstração prática de engenharia de software moderna: CI/CD, containerização e automação ITIL-like.*
+
 </div>
+
 
 ## 🧠 Sobre o Projeto
 
