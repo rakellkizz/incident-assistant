@@ -1,0 +1,33 @@
+# ── VCS
+.git
+.github
+
+# ── IDE / SO
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# ── Binários / artefatos
+incident-assistant
+incident-assistant.exe
+*.exe
+*.out
+*.test
+
+# ── Logs / temporários
+*.log
+*.tmp
+tmp/
+coverage.out
+
+# ── Tests (não necessários na imagem de runtime)
+internal/tests/
+
+# ── Variáveis locais / segredos
+.env
+.env.*
+*.env
+
+# ── Outros que não precisam ir para a imagem
+docker-compose*.yml
