@@ -19,7 +19,6 @@ incident-assistant.exe
 *.bak
 
 # 🔹 Cache do Go
-go.sum
 **/__debug_bin
 **/debug
 **/coverage.out
